@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
-export const GoalItem = props => {
+const GoalItem = props => {
     return (
         <View style={styles.listItem}>
             <Text>{props.title}</Text>
@@ -9,7 +9,7 @@ export const GoalItem = props => {
     );
 };
 
-const style = StyleSheet.create({
+const styles = StyleSheet.create({
     listItem: {
         padding: 10,
         marginVertical: 10,
@@ -18,3 +18,5 @@ const style = StyleSheet.create({
         borderWidth: 1
     }
 });
+
+export { GoalItem };
